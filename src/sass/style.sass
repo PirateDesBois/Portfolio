@@ -25,6 +25,7 @@ body
 //     background-color: #252527
 .endAnim
     display: none !important 
+
 code
     color: #921dc0
 
@@ -43,7 +44,7 @@ input:focus, button:focus
 
 .display-anim
     width: 100vw
-    height:800vh
+    height:100vh
     position: relative
     -webkit-animation: blop 3s 
     animation-iteration-count: 1
@@ -71,7 +72,6 @@ input:focus, button:focus
 
 ::-webkit-scrollbar-thumb:hover
     background: #555
-
 article
     h2
         font-size: 20px
@@ -90,7 +90,7 @@ article
     height:15px
     width: 2px
     display: inline-block
-    background-color:black
+    background-color: black
     animation-name: cursor2
     animation-duration: 0.7s
     animation-iteration-count: infinite
@@ -104,31 +104,32 @@ article
     100%
         background-color: white
 
-//fondu-background
-    // .fondu
-//     width:100vw
-//     height: 100vh
-//     background-color: red
-//     -webkit-animation-name: fadeInOpacity
-//     animation-name: fadeInOpacity
-//     -webkit-animation-iteration-count: 1
-//     animation-iteration-count: 1
-//     -webkit-animation-timing-function: ease-out
-//     animation-timing-function: ease-out
-//     -webkit-animation-duration: 2s
-//     animation-duration: 2s
-//     animation-fill-mode: forwards
+// fondu-background
+.fondu
+    width: 100vw
+    height: 100vh
+    -webkit-animation-name: fadeInOpacity
+    animation-name: fadeInOpacity
+    -webkit-animation-iteration-count: 1
+    animation-iteration-count: 1
+    -webkit-animation-timing-function: ease-out
+    animation-timing-function: ease-out
+    -webkit-animation-duration: 2s
+    animation-duration: 2s
+    animation-fill-mode: forwards
 
 
-// @-webkit-keyframes fadeInOpacity 
-//   100%
+@-webkit-keyframes fadeInOpacity 
+  100%
     
-//     opacity: 0
+    opacity: 0
+    background-color: purple    
   
-//   0% 
-//     opacity: 1
+  0% 
+    opacity: 1
+    background-color: #1E1E1E
   
-//fondu-background
+
 
 .test
     position: fixed !important
