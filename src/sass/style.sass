@@ -2,54 +2,109 @@
 @import "./_icon"
 @import "./_variables"
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
-
-input:focus, button:focus
-    outline: none !important
-    box-shadow: 0 0 0 0 transparent !important
 body
     background-color: #1E1E1E
     scroll-behavior: smooth !important
+    position: relative
 .navbar
     background: linear-gradient(90deg,#333333 , #3b3b3b)
     height:4vh
     width: 100vw !important
 ///////////////////////////////////////////////// animation intro ////////////////////////////////////////////////////////////////////
+.divTotal
+    z-index: 1
+    background-color: #1E1E1E
+    width: 100vw
+    height: 100vh
+    position: absolute
+.divSecondaire
+    z-index: -1
+    position: absolute
 
+    // body
+//     background-color: #252527
+.endAnim
+    display: none !important 
+code
+    color: #921dc0
+
+#button_launch
+    position: relative
+#button_launch:hover
+    background-color: #ff0000
+
+input:focus, button:focus
+    outline: none !important
+    box-shadow: 0 0 0 0 transparent !important
+
+.container
+    width:100vw
+    overflow: hidden
+
+.display-anim
+    width: 100vw
+    height:800vh
+    position: relative
+    -webkit-animation: blop 3s 
+    animation-iteration-count: 1
+    animation-fill-mode: forwards
+@-webkit-keyframes blop
+    0%
+        top:0px
+        
+    99%
+        top:600px
+        
+        opacity: 100%
+    100%
+        opacity: 0%
+
+/*scrollBAR*/
+::-webkit-scrollbar
+    width: 10px
+/* Track
+::-webkit-scrollbar-track
+    background: #1E1E1E
+/* Handle
+::-webkit-scrollbar-thumb
+    background: #383838
+
+::-webkit-scrollbar-thumb:hover
+    background: #555
+
+article
+    h2
+        font-size: 20px
+        font-weight: lighter !important
+        margin-top: 150px
+        position: relative
+        transform: translateY(-50%)
+    #text
+        margin: 0px
+        font-size: 20px !important
+        font-weight: lighter !important
+// fin test-1
+// text-tape
+
+.cursor
+    height:15px
+    width: 2px
+    display: inline-block
+    background-color:black
+    animation-name: cursor2
+    animation-duration: 0.7s
+    animation-iteration-count: infinite
+    animation-timing-function: ease-in-out
+    animation-fill-mode: forwards
+
+@keyframes cursor2
+    0%
+        background-color: #252527
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    100%
+        background-color: white
+
+//fondu-background
     // .fondu
 //     width:100vw
 //     height: 100vh
@@ -73,28 +128,7 @@ body
 //   0% 
 //     opacity: 1
   
-
-/////////////////////////////////////////////début animation/////////////////////////////////////////////////////
-.display-anim
-        margin: 12px 0
-        background: url("../../public/img/snack.jpg") no-repeat top center #ffffff00
-        -webkit-animation: test 1s infinite
-        animation: test 1s infinite
-
-@-webkit-keyframes test 
-    50% 
-        background-position: top center
-    
-
-@keyframes test 
-    50% 
-        background-position: bottom center
-    
-/////////////////////////////////////////////fin animation/////////////////////////////////////////////////////
-
-
-
-
+//fondu-background
 
 .test
     position: fixed !important
@@ -170,12 +204,3 @@ body
 ::selection
     background-color: #e97c00
     color: #001f63
-    
-
-
-// .cube
-    // width: 40px
-    // height:60px
-    // border-radius: 18px
-    // background: #383838
-    // box-shadow:  -7px -7px 13px #1d1d1d,7px 7px 13px #535353
